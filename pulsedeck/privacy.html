@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PulseDeck Beta — Privacy Notice</title>
+<style>body{font:17px/1.65 system-ui,sans-serif;color:#17212b;max-width:760px;margin:48px auto;padding:0 24px}h1{line-height:1.2}h2{font-size:21px;margin-top:32px}.draft{padding:16px;background:#fff3ce;border:1px solid #d7b24d}a{color:#006875}</style>
+<main>
+<p lang="zh-CN">PulseDeck Beta 隐私说明：心率、步数和手动额度在手表本地处理；行情请求向腾讯发送股票代码，天气请求向和风发送配置的城市坐标和 API Key。开发者不通过自有服务器收集这些数据。本说明网页由 GitHub Pages 托管，不含广告、分析脚本或表单。</p>
+<h1>PulseDeck Beta privacy notice</h1>
+<p>Version 0.2.0 · Effective 25 November 2026</p>
+<p>PulseDeck is a personal dashboard for Garmin Forerunner 245 and 245 Music. This notice describes the application’s data processing. It is not Garmin’s privacy policy. PulseDeck has no developer-operated data gateway, analytics service, advertising, or developer account system.</p>
+<h2>Data on the watch</h2>
+<p>The application reads the watch’s clock, battery, heart rate, steps and step goal to display them. It does not send these readings to its developer, Tencent, QWeather, or OpenAI. It does not record workout files.</p>
+<p>Application settings, manually entered ChatGPT quota snapshots and reset times, and cached stock/weather responses are stored using Garmin’s local application settings and storage facilities. Quota values are entered by you; PulseDeck does not log in to ChatGPT, read browser cookies or retrieve your ChatGPT conversation history.</p>
+<h2>Stock and weather requests</h2>
+<p>While open, the application uses Garmin’s communication service, normally through the paired phone and Garmin Connect, to contact these services over HTTPS:</p>
+<ul><li>Tencent at qt.gtimg.cn receives your configured public stock symbols and normal network request information. PulseDeck does not send brokerage account details or holdings.</li><li>QWeather receives the city latitude and longitude you configure, requested language/options, your QWeather API key, and normal network request information. PulseDeck does not request GPS permission or automatically obtain your current location. Do not enter a precise personal location unless you want it sent to QWeather.</li></ul>
+<p>These service providers and Garmin process requests under their own terms and privacy practices. Network services may receive connection metadata such as IP addresses. PulseDeck does not control their logs or retention. Weather is not requested until you configure a valid QWeather API host, key and coordinates. Stock requests can be disabled by clearing both stock symbols. Exiting the watch app stops its scheduled network requests.</p>
+<h2>API keys</h2>
+<p>The distributable Beta package does not include a personal QWeather key. A key you enter is stored as an app setting and sent to your configured QWeather API host for authentication. Application settings use Garmin’s infrastructure and are not a separate encrypted secret vault. The app does not display the key in its dashboard or error messages. You can remove it from settings or revoke it in QWeather’s console.</p>
+<h2>Your choices and retention</h2>
+<p>You can edit or clear your settings, disable external requests as described above, and uninstall the app. Cached responses remain in application storage until overwritten, cleared by Garmin’s application management, or removed during uninstall. For a complete local reset, clear the application’s settings/data or remove it from your device; data held by Garmin or external providers must be managed with those providers. There is no developer-side copy of watch data to delete.</p>
+<h2>This privacy notice website</h2>
+<p>This standalone page is hosted on GitHub Pages and contains no analytics scripts, advertising, forms or embedded third-party assets. GitHub may process standard web request information to serve the page under its own privacy practices.</p>
+<h2>Contact and changes</h2>
+<p>Contact: <a href="mailto:yww0828@126.com">yww0828@126.com</a>. If you email the developer, the message and contact information you choose to send will be used to answer your request.</p>
+<p>This notice must be updated when the app’s data processing changes.</p>
+</main>
+</html>
